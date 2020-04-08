@@ -1,0 +1,17 @@
+h1{
+    color: brown;
+}
+#homepage{
+    color: darkblue;
+}
+.para{
+    font-size: 30px;
+}
+#main{
+    margin-top: 500px;
+    margin-bottom: 20px;
+}
+img{
+    width: 200px;
+    height: auto;
+}
