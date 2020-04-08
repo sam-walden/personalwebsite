@@ -22,7 +22,7 @@ app.get('/about', (req,res) =>{
 app.get('/contact', (req,res) => {
     res.render('contact');
 });
-
+// this is porfolio route handler
 app.get('/portfolio', (req,res) => {
     res.render('portfolio');
 })
