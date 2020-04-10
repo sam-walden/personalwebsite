@@ -1,7 +1,8 @@
 <div class="container">
-    {{#each messages}}
-    <h1>{{name}}</h1>
+    {{#each message}}    
     <h3>{{email}}</h3>
+    <p>{{message}}</p>
     {{else}}
     <p>No messages found..</p>
+    {{/each}}
 </div>

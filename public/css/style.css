@@ -1,9 +1,11 @@
 
-
 h3,h4,p{
     text-align: center;
-    color: thistle;
+    color: rgb(218, 214, 218);
+    font-size: 20px;
+    font-weight:900; 
 }
+
 .para{
     font-size: 30px;
 }
@@ -12,29 +14,25 @@ h3,h4,p{
     margin-bottom: 20px;
 }
 
-#homepage {
-    color: rgb(179, 52, 58);
-    position: absolute;
-    top:25%;
-    right: -45%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    text-align: center;    
+img{
+    width: 200px;
+    height:auto;   
+    
 }
 
-.text1 p1{     
+#homepage h1{
+    color: rgb(255, 2, 2);   
+    font-size: 25px;
+    font-weight:900; 
+}
+
+#about p1{     
     color:black;  
-    border: 1px solid green ;    
-}
-
-#about {    
-    position: absolute;
-    top:60%;
-    left: 45%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    text-align: justify;    
     font-size: 22px;
-    font-weight:750;    
+    font-weight:900;   
+      
 }
+#contact {
+    background: rgb(199, 200, 202);    
+  }
 

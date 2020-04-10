@@ -24,10 +24,7 @@ app.use(bodyParser.json());
 
 //create collection with mongoose
 const Schema = mongoose.Schema;
-const Message = mongoose.model('message',new Schema({
-    name: {
-        type: String
-    },
+const Message = mongoose.model('message',new Schema({   
     email: {
         type: String
     },
@@ -50,8 +47,7 @@ app.get('/contact', (req,res) => {
     res.render('contact');
 });
 app.post('/getMessage',(req,res) =>{
-    const newMessage= {
-        name: req.body.name,
+    const newMessage= {        
         email: req.body.email,
         message: req.body.message
     }
@@ -60,6 +56,17 @@ app.post('/getMessage',(req,res) =>{
         res.render('inbox');
     });
 });
+app.get('/displayMessage', (req,res)=>{
+    Message.find(({}, (err,message)=>{
+        if(err){
+            console.log(err);
+        }else{
+            res.render('displayMessage',{
+                message:message
+            })
+        }
+    }))
+})
 // this is porfolio route handler
 app.get('/portfolio', (req,res) => {
     res.render('portfolio');
